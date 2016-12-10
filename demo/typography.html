@@ -1,0 +1,255 @@
+<!doctype html>
+
+<!--
+  @license
+  Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+  This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+  The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+  The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+  Code distributed by Google as part of the polymer project is also
+  subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+  <title>skin-styles-typography demo</title>
+
+  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="../../polymer/lib/elements/custom-style.html">
+
+  <link rel="import" href="../../paper-styles/demo-pages.html">
+  <link rel="import" href="../../paper-button/paper-button.html">
+  <link rel="import" href="../classes/typography.html">
+  <link rel="import" href="../styles/default-theme.html">
+
+  <custom-style>
+    <style include="skin-styles-typography">
+      .redlines {
+        background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255, 0, 0, 0.2) 3.5px, rgba(255, 0, 0, 0.2) 4px);
+        background-size: 100% 4px;
+      }
+
+      .bg-dark {
+        background-color: var(--paper-grey-900);
+      }
+
+      .paragraph {
+        margin-bottom: 20px;
+      }
+
+      .mobile-app {
+        max-width: 320px;
+      }
+
+      .toolbar {
+        height: 144px;
+        padding: 16px;
+
+        background: var(--default-primary-color);
+        color: var(--text-primary-color);
+        @apply(--paper-font-display1);
+      }
+
+      .item, .disabled-item {
+        position: relative;
+        padding: 8px;
+        border: 1px solid;
+        border-color: var(--divider-color);
+        border-top: 0;
+      }
+
+      .item .primary {
+        color: var(--primary-text-color);
+
+        @apply(--paper-font-body2);
+      }
+
+      .item .secondary {
+        color: var(--secondary-text-color);
+
+        @apply(--paper-font-body1);
+      }
+
+      .disabled-item {
+        color: var(--disabled-text-color);
+
+        @apply(--paper-font-body2);
+      }
+
+      .fab {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 8px;
+        width: 56px;
+        height: 56px;
+        right: 16px;
+        top: -28px;
+        border-radius: 50%;
+        text-align: center;
+
+        background: var(--accent-color);
+        color: var(--text-primary-color);
+        @apply(--paper-font-display1);
+      }
+
+      section {
+        border-bottom: 4px solid gray;
+        padding: 30px 10px;
+      }
+    </style>
+  </custom-style>
+</head>
+
+<body>
+<h1>skin-styles-typography</h1>
+
+<section id="default-theme">
+  <h2>default-theme.html</h2>
+
+  <article class="mobile-app">
+    <div class="toolbar">
+      Title
+    </div>
+    <div class="item">
+      <div class="fab">+</div>
+      <div class="primary">Primary text</div>
+      <div class="secondary">Secondary text</div>
+    </div>
+    <div class="disabled-item">
+      Disabled
+    </div>
+  </article>
+</section>
+
+
+<section id="typography-light">
+  <h2>typography-light.html</h2>
+  <p>
+    Grumpy wizards make toxic brew for the evil Queen and Jack.
+  </p>
+  <article class="redlines paragraph">
+    <div class="paper-font-display4 light">Display 4</div>
+    <div class="paper-font-display3 light">Display 3</div>
+    <div class="paper-font-display2 light">Display 2</div>
+    <div class="paper-font-display1 light">Display 1</div>
+    <div class="paper-font-headline light">Headline</div>
+    <div class="paper-font-title light">Title</div>
+    <div class="paper-font-subhead light">Subhead</div>
+    <div class="paper-font-body2 light">Body 2</div>
+    <div class="paper-font-body1 light">Body 1</div>
+    <div class="paper-font-caption light">Caption</div>
+    <div class="paper-font-menu light">Menu</div>
+    <div class="paper-font-button light">Button</div>
+  </article>
+
+  <h3>Paragraphs</h3>
+
+  <h4>body2</h4>
+  <article class="paper-font-body2 redlines light">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+      tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+      purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+      dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+      egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+      faucibus in leo.
+    </p>
+    <p>
+      Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+      interdum neque magna, eget dapibus est auctor et. Donec accumsan
+      libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+      sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+      sollicitudin tellus quam non sapien.
+    </p>
+  </article>
+
+  <h4>body1</h4>
+  <article class="paper-font-body1 redlines light">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+      tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+      purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+      dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+      egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+      faucibus in leo.
+    </p>
+    <p>
+      Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+      interdum neque magna, eget dapibus est auctor et. Donec accumsan
+      libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+      sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+      sollicitudin tellus quam non sapien.
+    </p>
+  </article>
+</section>
+
+<br>
+<hr>
+
+<section id="typography-dark">
+  <h2>typography-dark.html</h2>
+  <p>
+    Grumpy wizards make toxic brew for the evil Queen and Jack.
+  </p>
+  <article class="redlines paragraph bg-dark">
+    <div class="paper-font-display4 dark">Display 4</div>
+    <div class="paper-font-display3 dark">Display 3</div>
+    <div class="paper-font-display2 dark">Display 2</div>
+    <div class="paper-font-display1 dark">Display 1</div>
+    <div class="paper-font-headline dark">Headline</div>
+    <div class="paper-font-title dark">Title</div>
+    <div class="paper-font-subhead dark">Subhead</div>
+    <div class="paper-font-body2 dark">Body 2</div>
+    <div class="paper-font-body1 dark">Body 1</div>
+    <div class="paper-font-caption dark">Caption</div>
+    <div class="paper-font-menu dark">Menu</div>
+    <div class="paper-font-button dark">Button</div>
+  </article>
+
+  <h3>Paragraphs</h3>
+
+  <h4>body2</h4>
+  <article class="paper-font-body2 redlines dark bg-dark">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+      tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+      purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+      dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+      egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+      faucibus in leo.
+    </p>
+    <p>
+      Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+      interdum neque magna, eget dapibus est auctor et. Donec accumsan
+      libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+      sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+      sollicitudin tellus quam non sapien.
+    </p>
+  </article>
+
+  <h4>body1</h4>
+  <article class="paper-font-body1 redlines dark bg-dark">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+      tincidunt dui sit amet mi auctor, ac gravida magna aliquam. Fusce quis
+      purus elementum, tempus nisi vel, volutpat nulla. Vestibulum mollis
+      dictum tellus, vulputate porttitor arcu. Curabitur imperdiet risus id
+      egestas accumsan. Donec lectus felis, dignissim id iaculis sit amet,
+      faucibus in leo.
+    </p>
+    <p>
+      Mauris id urna ac ante ultrices commodo a imperdiet elit. Vivamus
+      interdum neque magna, eget dapibus est auctor et. Donec accumsan
+      libero nec augue scelerisque, ac egestas ante tincidunt. Proin
+      sollicitudin, mi eget sagittis mollis, arcu orci scelerisque turpis, a
+      sollicitudin tellus quam non sapien.
+    </p>
+  </article>
+</section>
+
+</body>
+</html>
