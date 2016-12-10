@@ -7,29 +7,144 @@ App color themes
 <style is="custom-style">
   paper-button {
     text-decoration: none;
-    text-transform: none !important;
-  }
-
-  paper-button:focus {
-    outline: 0;
   }
 
   /* ===========================
   Buttons
   =============================*/
   /*noinspection ALL*/
-  .btn--rounded {
+  .btn-rounded {
     border-radius: 200px;
     padding-left: 16px;
     padding-right: 16px;
   }
 
+  /* primary-color ==============================================================*/
   /*noinspection ALL*/
-  .btn--primary:not([disabled]) {
-    background-color: var(--app-accent-color);
+  .btn--primary-color:not([disabled]) {
+    color: var(--primary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--primary-color:not([disabled]) {
+    background-color: var(--primary-color);
     color: white;
   }
 
+  /*noinspection ALL*/
+  .btn--light-primary-color:not([disabled]) {
+    color: var(--light-primary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--light-primary-color:not([disabled]) {
+    background-color: var(--light-primary-color);
+  }
+
+  /*noinspection ALL*/
+  .btn--dark-primary-color:not([disabled]) {
+    color: var(--dark-primary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--dark-primary-color:not([disabled]) {
+    background-color: var(--dark-primary-color);
+    color: white;
+  }
+
+
+  /*noinspection ALL*/
+  .btn--accent-color:not([disabled]) {
+    color: var(--accent-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--accent-color:not([disabled]) {
+    background-color: var(--accent-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--light-accent-color:not([disabled]) {
+    color: var(--light-accent-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--light-accent-color:not([disabled]) {
+    background-color: var(--light-accent-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--dark-accent-color:not([disabled]) {
+    color: var(--dark-accent-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--dark-accent-color:not([disabled]) {
+    background-color: var(--dark-accent-color);
+    color: white;
+  }
+
+
+  /* secondary-color ==============================================================*/
+  /*noinspection ALL*/
+  .btn--secondary-color:not([disabled]) {
+    color: var(--secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--secondary-color:not([disabled]) {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--light-secondary-color:not([disabled]) {
+    color: var(--light-secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--light-secondary-color:not([disabled]) {
+    background-color: var(--light-secondary-color);
+  }
+
+  /*noinspection ALL*/
+  .btn--dark-secondary-color:not([disabled]) {
+    color: var(--dark-secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--dark-secondary-color:not([disabled]) {
+    background-color: var(--dark-secondary-color);
+    color: white;
+  }
+
+
+  /*noinspection ALL*/
+  .btn--accent-secondary-color:not([disabled]) {
+    color: var(--accent-secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--accent-secondary-color:not([disabled]) {
+    background-color: var(--accent-secondary-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--light-accent-secondary-color:not([disabled]) {
+    color: var(--light-accent-secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--light-accent-secondary-color:not([disabled]) {
+    background-color: var(--light-accent-secondary-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--dark-accent-secondary-color:not([disabled]) {
+    color: var(--dark-accent-secondary-color);
+  }
+  /*noinspection ALL*/
+  .btn-fill--dark-accent-secondary-color:not([disabled]) {
+    background-color: var(--dark-accent-secondary-color);
+    color: white;
+  }
+
+
+
+  /*=====================================*/
   /*noinspection ALL*/
   .btn-light:not([disabled]) {
     color: var(--paper-grey-600);
@@ -42,12 +157,12 @@ App color themes
 
   /*noinspection ALL*/
   .btn--light--primary:not([disabled]) {
-    color: var(--app-accent-color);
+    color: var(--accent-color);
     background-color: white;
   }
 
   /*noinspection ALL*/
-  .btn--primary--alt:not([disabled]) {
+  .btn--accent-color--alt:not([disabled]) {
     color: var(--paper-grey-600);
     background: var(--app-accent-color-light);
   }

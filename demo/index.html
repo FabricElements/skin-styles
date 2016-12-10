@@ -23,6 +23,7 @@
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../poly-theme.html">
   <link rel="import" href="../classes.html">
+  <link rel="import" href="../../paper-button/paper-button.html">
 
 </head>
 
@@ -94,15 +95,308 @@
     color: var(--text-primary-color);
     @apply(--paper-font-display1);
   }
+
+  section {
+    border-bottom: 4px solid gray;
+    padding: 30px 10px;
+  }
 </style>
 
 <body unresolved>
-<h1>paper-styles</h1>
+<h1>poly-theme</h1>
+
+<section is="buttons">
+  <h2>buttons.html</h2>
+  <p>Use paper-button attributes like "raised" to continue manipulating the styles</p>
+  <br>
+  <br>
+
+  <article>
+    <h3>btn-rounded</h3>
+    <paper-button raised class="btn-rounded">
+      hello
+    </paper-button>
+    <paper-button class="btn-fill--dark-accent-color btn-rounded">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-accent-color btn-rounded">
+      hello
+    </paper-button>
+    <paper-button class="btn-fill--dark-accent-secondary-color btn-rounded">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-accent-secondary-color btn-rounded">
+      hello
+    </paper-button>
+  </article>
+  <br>
+<hr>
+  <article>
+    <h3>btn--primary-color</h3>
+    <paper-button class="btn--primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--primary-color</h3>
+    <paper-button class="btn-fill--primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--light-primary-color</h3>
+    <paper-button class="btn--light-primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--light-primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--light-primary-color</h3>
+    <paper-button class="btn-fill--light-primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--light-primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--dark-primary-color</h3>
+    <paper-button class="btn--dark-primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--dark-primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--dark-primary-color</h3>
+    <paper-button class="btn-fill--dark-primary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-primary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--accent-color</h3>
+    <paper-button class="btn--accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--accent-color</h3>
+    <paper-button class="btn-fill--accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--light-accent-color</h3>
+    <paper-button class="btn--light-accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--light-accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--light-accent-color</h3>
+    <paper-button class="btn-fill--light-accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--light-accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--dark-accent-color</h3>
+    <paper-button class="btn--dark-accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--dark-accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--dark-accent-color</h3>
+    <paper-button class="btn-fill--dark-accent-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-accent-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+
+
+
+  </article>
+  <br>
+  <article>
+    <h3>btn--secondary-color</h3>
+    <paper-button class="btn--secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--secondary-color</h3>
+    <paper-button class="btn-fill--secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--light-secondary-color</h3>
+    <paper-button class="btn--light-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--light-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--light-secondary-color</h3>
+    <paper-button class="btn-fill--light-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--light-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--dark-secondary-color</h3>
+    <paper-button class="btn--dark-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--dark-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--dark-secondary-color</h3>
+    <paper-button class="btn-fill--dark-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--accent-secondary-color</h3>
+    <paper-button class="btn--accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--accent-secondary-color</h3>
+    <paper-button class="btn-fill--accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--light-accent-secondary-color</h3>
+    <paper-button class="btn--light-accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--light-accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--light-accent-secondary-color</h3>
+    <paper-button class="btn-fill--light-accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--light-accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+
+    <h3>btn--dark-accent-secondary-color</h3>
+    <paper-button class="btn--dark-accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn--dark-accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+
+    <h3>btn-fill--dark-accent-secondary-color</h3>
+    <paper-button class="btn-fill--dark-accent-secondary-color">
+      hello
+    </paper-button>
+    <paper-button raised class="btn-fill--dark-accent-secondary-color">
+      hello
+    </paper-button>
+    <br>
+    <br>
+    <hr>
+  </article>
+
+</section>
 
 <section id="default-theme">
   <h2>default-theme.html</h2>
 
-  <section class="mobile-app">
+  <article class="mobile-app">
     <div class="toolbar">
       Title
     </div>
@@ -114,11 +408,9 @@
     <div class="disabled-item">
       Disabled
     </div>
-  </section>
+  </article>
 </section>
 
-<br>
-<hr>
 
 <section id="typography-light">
   <h2>typography-light.html</h2>
