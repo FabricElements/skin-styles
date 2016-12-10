@@ -1,0 +1,66 @@
+<!--
+`buttons`
+App color themes
+
+@demo demo/index.html
+-->
+<style is="custom-style">
+  paper-button {
+    text-decoration: none;
+    text-transform: none !important;
+  }
+
+  paper-button:focus {
+    outline: 0;
+  }
+
+  /* ===========================
+  Buttons
+  =============================*/
+  /*noinspection ALL*/
+  .btn--rounded {
+    border-radius: 200px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /*noinspection ALL*/
+  .btn--primary:not([disabled]) {
+    background-color: var(--app-accent-color);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn-light:not([disabled]) {
+    color: var(--paper-grey-600);
+  }
+
+  /*noinspection ALL*/
+  .btn-light-white:not([disabled]) {
+    color: #ffffff;
+  }
+
+  /*noinspection ALL*/
+  .btn--light--primary:not([disabled]) {
+    color: var(--app-accent-color);
+    background-color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--primary--alt:not([disabled]) {
+    color: var(--paper-grey-600);
+    background: var(--app-accent-color-light);
+  }
+
+  /*noinspection ALL*/
+  .btn--mid--dark:not([disabled]) {
+    background-color: var(--paper-grey-600);
+    color: white;
+  }
+
+  /*noinspection ALL*/
+  .btn--dark:not([disabled]) {
+    background-color: var(--paper-grey-900);
+    color: white;
+  }
+</style>
