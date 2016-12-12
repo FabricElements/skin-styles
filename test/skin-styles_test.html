@@ -4,25 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-    <title>poly-theme test</title>
+    <title>skin-styles test</title>
 
     <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
     <script src="../../web-component-tester/browser.js"></script>
 
-    <link rel="import" href="../poly-theme.html">
+    <link rel="import" href="../skin-styles.html">
   </head>
   <body>
     <test-fixture id="basic">
       <template>
-        <poly-theme></poly-theme>
+        <skin-styles></skin-styles>
       </template>
     </test-fixture>
 
     <script>
-      suite('poly-theme', function() {
+      suite('skin-styles', function() {
         test('instantiating the element works', function() {
           var element = fixture('basic');
-          assert.equal(element.is, 'poly-theme');
+          assert.equal(element.is, 'skin-styles');
         });
       });
     </script>

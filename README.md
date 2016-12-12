@@ -1,4 +1,4 @@
-# \<poly-theme\>
+# \<skin-styles\>
 
 Extend paper-styles
 
