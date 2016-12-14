@@ -16,9 +16,10 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
 <link rel="import" href="styles.html">
 <link rel="import" href="classes.html">
 
-<dom-module id="skin-styles-classes">
+<dom-module id="skin-styles">
   <template>
     <custom-style>
+      <style is="custom-style" include="skin-styles-classes"></style>
     </custom-style>
   </template>
 </dom-module>

@@ -5,455 +5,460 @@
 <link rel="import" href="typography-light.html">
 
 <!--
-`typography`
+`skin-styles-classes-typography`
 Typography Sizes applied to paper classes.
 
 
 @demo demo/index.html
 -->
-<style is="custom-style">
-
-  /*
-  "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
-  styles. All other styles should exist as single lines."
-  */
-
-  /*noinspection ALL*/
-  .paper-font-display4,
-  .paper-font-display3,
-  .paper-font-display2,
-  .paper-font-display1,
-  .paper-font-headline,
-  .paper-font-title,
-  .paper-font-subhead,
-  .paper-font-body2,
-  .paper-font-body1,
-  .paper-font-caption,
-  .paper-font-menu,
-  .paper-font-button {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-code2,
-  .paper-font-code1 {
-  }
-
-  /*
-  "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
-  styles. All other styles should exist as single lines."
-  */
-
-  /*noinspection ALL*/
-  .paper-font-display4 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-display3 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-display2 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-display1 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-headline {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-title {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-subhead {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-body2 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-body1 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-caption {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-menu {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-button {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-code2 {
-  }
-
-  /*noinspection ALL*/
-  .paper-font-code1 {
-  }
-
-  /* ===========================
-  media-breakpoint-up
-  ============================== */
-
-  @media (min-width: 0) {
-    /* media-breakpoint-up-xs */
-    .paper-font-display4 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display3 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-headline {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-title {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-subhead {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-caption {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-menu {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-button {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code1 {
-    }
-  }
-
-  @media (min-width: 544px) {
-    /* media-breakpoint-up-sm */
-    /*noinspection ALL*/
-    .paper-font-display4 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display3 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-headline {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-title {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-subhead {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-caption {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-menu {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-button {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code1 {
-    }
-  }
-
-  @media (min-width: 768px) {
-    /* media-breakpoint-up-md */
-    /*noinspection ALL*/
-    .paper-font-display4 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display3 {
-      font-size: 60px;
-      font-weight: 500;
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display2 {
-      @apply(--paper-font-display3);
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display1 {
-      @apply(--paper-font-display2);
-    }
-
-    /*noinspection ALL*/
-    .paper-font-headline {
-      @apply(--paper-font-display1);
-    }
-
-    /*noinspection ALL*/
-    .paper-font-title {
-      @apply(--paper-font-headline);
-      font-weight: 500;
-    }
-
-    /*noinspection ALL*/
-    .paper-font-subhead {
-      @apply(--paper-font-title);
-      font-weight: 400;
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-      @apply(--paper-font-subhead);
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body2 {
-      @apply(--paper-font-subhead);
-      font-weight: 500;
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-caption {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-menu {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-button {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code1 {
-    }
-  }
-
-  @media (min-width: 992px) {
-    /* media-breakpoint-up-lg */
-    /*noinspection ALL*/
-    .paper-font-display4 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display3 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-headline {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-title {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-subhead {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-caption {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-menu {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-button {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code1 {
-    }
-  }
-
-  @media (min-width: 1200px) {
-    /* media-breakpoint-up-xl */
-    /*noinspection ALL*/
-    .paper-font-display4 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display3 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-display1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-headline {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-title {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-subhead {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-body1 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-caption {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-menu {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-button {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code2 {
-    }
-
-    /*noinspection ALL*/
-    .paper-font-code1 {
-    }
-  }
-
-  /* ===========================
-  media-breakpoint-down
-  =============================*/
-
-  @media (max-width: 543px) {
-    /* media-breakpoint-up-xs */
-
-  }
-
-  @media (max-width: 767px) {
-    /* media-breakpoint-down-sm */
-    paper-button {
-      font-size: 13px;
-    }
-  }
-
-  @media (max-width: 991px) {
-    /* media-breakpoint-down-md */
-  }
-
-  @media (max-width: 1199px) {
-    /* media-breakpoint-down-lg */
-  }
-
-  /* ===========================
-  media-breakpoint-only
-  =============================*/
-
-  @media (min-width: 0) and (max-width: 543px) {
-    /* media-breakpoint-only-xs */
-  }
-
-  @media (min-width: 544px) and (max-width: 767px) {
-    /* media-breakpoint-only-sm */
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    /* media-breakpoint-only-md */
-  }
-
-  @media (min-width: 992px) and (max-width: 1199px) {
-    /* media-breakpoint-only-lg */
-  }
-</style>
+<dom-module id="skin-styles-classes-typography">
+  <template>
+    <custom-style>
+      <style is="custom-style">
+        /*
+        "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
+        styles. All other styles should exist as single lines."
+        */
+
+        /*noinspection ALL*/
+        .paper-font-display4,
+        .paper-font-display3,
+        .paper-font-display2,
+        .paper-font-display1,
+        .paper-font-headline,
+        .paper-font-title,
+        .paper-font-subhead,
+        .paper-font-body2,
+        .paper-font-body1,
+        .paper-font-caption,
+        .paper-font-menu,
+        .paper-font-button {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-code2,
+        .paper-font-code1 {
+        }
+
+        /*
+        "Line wrapping only applies to Body, Subhead, Headline, and the smaller Display
+        styles. All other styles should exist as single lines."
+        */
+
+        /*noinspection ALL*/
+        .paper-font-display4 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-display3 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-display2 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-display1 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-headline {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-title {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-subhead {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-body2 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-body1 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-caption {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-menu {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-button {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-code2 {
+        }
+
+        /*noinspection ALL*/
+        .paper-font-code1 {
+        }
+
+        /* ===========================
+        media-breakpoint-up
+        ============================== */
+
+        @media (min-width: 0) {
+          /* media-breakpoint-up-xs */
+          .paper-font-display4 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display3 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-headline {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-title {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-subhead {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-caption {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-menu {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-button {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code1 {
+          }
+        }
+
+        @media (min-width: 544px) {
+          /* media-breakpoint-up-sm */
+          /*noinspection ALL*/
+          .paper-font-display4 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display3 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-headline {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-title {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-subhead {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-caption {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-menu {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-button {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code1 {
+          }
+        }
+
+        @media (min-width: 768px) {
+          /* media-breakpoint-up-md */
+          /*noinspection ALL*/
+          .paper-font-display4 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display3 {
+            font-size: 60px;
+            font-weight: 500;
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display2 {
+            @apply(--paper-font-display3);
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display1 {
+            @apply(--paper-font-display2);
+          }
+
+          /*noinspection ALL*/
+          .paper-font-headline {
+            @apply(--paper-font-display1);
+          }
+
+          /*noinspection ALL*/
+          .paper-font-title {
+            @apply(--paper-font-headline);
+            font-weight: 500;
+          }
+
+          /*noinspection ALL*/
+          .paper-font-subhead {
+            @apply(--paper-font-title);
+            font-weight: 400;
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+            @apply(--paper-font-subhead);
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body2 {
+            @apply(--paper-font-subhead);
+            font-weight: 500;
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-caption {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-menu {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-button {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code1 {
+          }
+        }
+
+        @media (min-width: 992px) {
+          /* media-breakpoint-up-lg */
+          /*noinspection ALL*/
+          .paper-font-display4 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display3 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-headline {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-title {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-subhead {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-caption {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-menu {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-button {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code1 {
+          }
+        }
+
+        @media (min-width: 1200px) {
+          /* media-breakpoint-up-xl */
+          /*noinspection ALL*/
+          .paper-font-display4 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display3 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-display1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-headline {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-title {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-subhead {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-body1 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-caption {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-menu {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-button {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code2 {
+          }
+
+          /*noinspection ALL*/
+          .paper-font-code1 {
+          }
+        }
+
+        /* ===========================
+        media-breakpoint-down
+        =============================*/
+
+        @media (max-width: 543px) {
+          /* media-breakpoint-up-xs */
+
+        }
+
+        @media (max-width: 767px) {
+          /* media-breakpoint-down-sm */
+          paper-button {
+            font-size: 13px;
+          }
+        }
+
+        @media (max-width: 991px) {
+          /* media-breakpoint-down-md */
+        }
+
+        @media (max-width: 1199px) {
+          /* media-breakpoint-down-lg */
+        }
+
+        /* ===========================
+        media-breakpoint-only
+        =============================*/
+
+        @media (min-width: 0) and (max-width: 543px) {
+          /* media-breakpoint-only-xs */
+        }
+
+        @media (min-width: 544px) and (max-width: 767px) {
+          /* media-breakpoint-only-sm */
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+          /* media-breakpoint-only-md */
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+          /* media-breakpoint-only-lg */
+        }
+      </style>
+    </custom-style>
+  </template>
+</dom-module>
