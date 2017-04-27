@@ -19,87 +19,90 @@
   <title>skin-styles demo</title>
 
   <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+  <script src="../../polymer/lib/elements/custom-style.html"></script>
 
   <link rel="import" href="../../paper-styles/demo-pages.html">
   <link rel="import" href="../../paper-button/paper-button.html">
   <link rel="import" href="../skin-styles.html">
 
+  <custom-style>
+    <style include="skin-styles">
+      .redlines {
+        background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255, 0, 0, 0.2) 3.5px, rgba(255, 0, 0, 0.2) 4px);
+        background-size: 100% 4px;
+      }
+
+      .bg-dark {
+        background-color: var(--paper-grey-900);
+      }
+
+      .paragraph {
+        margin-bottom: 20px;
+      }
+
+      .mobile-app {
+        max-width: 320px;
+      }
+
+      .toolbar {
+        height: 144px;
+        padding: 16px;
+
+        background: var(--default-primary-color);
+        color: var(--text-primary-color);
+        @apply(--paper-font-display1);
+      }
+
+      .item, .disabled-item {
+        position: relative;
+        padding: 8px;
+        border: 1px solid;
+        border-color: var(--divider-color);
+        border-top: 0;
+      }
+
+      .item .primary {
+        color: var(--primary-text-color);
+
+        @apply(--paper-font-body2);
+      }
+
+      .item .secondary {
+        color: var(--secondary-text-color);
+
+        @apply(--paper-font-body1);
+      }
+
+      .disabled-item {
+        color: var(--disabled-text-color);
+
+        @apply(--paper-font-body2);
+      }
+
+      .fab {
+        position: absolute;
+        box-sizing: border-box;
+        padding: 8px;
+        width: 56px;
+        height: 56px;
+        right: 16px;
+        top: -28px;
+        border-radius: 50%;
+        text-align: center;
+
+        background: var(--accent-color);
+        color: var(--text-primary-color);
+        @apply(--paper-font-display1);
+      }
+
+      section {
+        border-bottom: 4px solid gray;
+        padding: 30px 10px;
+      }
+    </style>
+  </custom-style>
 </head>
 
-<style is="custom-style" include="skin-styles">
-  .redlines {
-    background: linear-gradient(0deg, transparent, transparent 3.5px, rgba(255, 0, 0, 0.2) 3.5px, rgba(255, 0, 0, 0.2) 4px);
-    background-size: 100% 4px;
-  }
-
-  .bg-dark {
-    background-color: var(--paper-grey-900);
-  }
-
-  .paragraph {
-    margin-bottom: 20px;
-  }
-
-  .mobile-app {
-    max-width: 320px;
-  }
-
-  .toolbar {
-    height: 144px;
-    padding: 16px;
-
-    background: var(--default-primary-color);
-    color: var(--text-primary-color);
-    @apply(--paper-font-display1);
-  }
-
-  .item, .disabled-item {
-    position: relative;
-    padding: 8px;
-    border: 1px solid;
-    border-color: var(--divider-color);
-    border-top: 0;
-  }
-
-  .item .primary {
-    color: var(--primary-text-color);
-
-    @apply(--paper-font-body2);
-  }
-
-  .item .secondary {
-    color: var(--secondary-text-color);
-
-    @apply(--paper-font-body1);
-  }
-
-  .disabled-item {
-    color: var(--disabled-text-color);
-
-    @apply(--paper-font-body2);
-  }
-
-  .fab {
-    position: absolute;
-    box-sizing: border-box;
-    padding: 8px;
-    width: 56px;
-    height: 56px;
-    right: 16px;
-    top: -28px;
-    border-radius: 50%;
-    text-align: center;
-
-    background: var(--accent-color);
-    color: var(--text-primary-color);
-    @apply(--paper-font-display1);
-  }
-
-  section {
-    border-bottom: 4px solid gray;
-    padding: 30px 10px;
-  }
-</style>
 
 <body unresolved>
 <h1>skin-styles</h1>
@@ -129,7 +132,7 @@
     </paper-button>
   </article>
   <br>
-<hr>
+  <hr>
   <article>
     <h3>btn--primary-color</h3>
     <paper-button class="btn--primary-color">
@@ -256,8 +259,6 @@
     <br>
     <br>
     <hr>
-
-
 
 
   </article>

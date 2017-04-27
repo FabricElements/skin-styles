@@ -1,0 +1,8 @@
+{
+  "entrypoint": "skin-styles.html",
+  "lint": {
+    "rules": [
+      "polymer-2-hybrid"
+    ]
+  }
+}
