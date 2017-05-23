@@ -1,16 +1,21 @@
-<link rel="import" href="../../polymer/polymer-element.html">
+<link rel="import" href="../../polymer/polymer.html">
 <link rel="import" href="../styles/buttons.html">
 
 <!--
+@license
+Copyright (c) 2017 FabricElements. All rights reserved.
+
 `buttons`
 App color themes
 
 @group Skin Styles
+@pseudoElement skin-styles-buttons
 @demo demo/buttons.html
 -->
+
 <dom-module id="skin-styles-buttons">
-  <template strip-whitespace>
-    <style>
+  <template>
+    <style is="custom-style">
       /*noinspection ALL*/
       a,
       a > paper-button {
