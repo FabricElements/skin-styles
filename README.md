@@ -32,7 +32,7 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
 
 ### Examples: basic usage
 
-* `skin-styles-buttons`
+* `skin-buttons`
   * `btn-rounded`
 
   ``` html
@@ -63,7 +63,7 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
 
   To see more basic grid layouts, please check the [demo](./demo/grid.html) file. 
 
-* `skin-styles-typography`
+* `skin-typography`
   * `typography-light`
 
   ``` html
