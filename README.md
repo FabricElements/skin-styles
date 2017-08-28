@@ -15,24 +15,18 @@ $ bower install --save FabricElements/skin-styles
 
 ## Usage
 
-Import it into the `<head>` of your page
-
-```html
-<link rel="import" href="bower_components/skin-styles/skin-styles.html">
-```
-
 The `<skin-styles>` component provides simple ways to use Material Design CSS styles in your application. The following imports are also available:
 
-* [buttons.html](./classes/buttons.html): A complete set of custom buttons.
-* [grid.html](./classes/grid.html): A grid layout using Bootstrap.
-* [typography.html](./classes/typography.html): A Set of default styles for typography extending the paper default styles.
+* [buttons.html](skin-buttons/skin-buttons.html): A complete set of custom buttons.
+* [grid.html](bootstrap/grid.html): A grid layout using Bootstrap.
+* [typography.html](skin-typography/skin-typography.html): A Set of default styles for typography extending the paper default styles.
 
 We recommend importing each of these individual files, and using the style mixins
 available in each ones, rather than the aggregated `skin-styles.html` as a whole.
 
 ### Examples: basic usage
 
-* `skin-styles-buttons`
+* `skin--buttons`
   * `btn-rounded`
 
   ``` html
@@ -48,7 +42,7 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
   ```
   Use paper-button attributes like **"raised"** to continue manipulating the styles.
 
-  To see more custom buttons styles, please check the [demo](./demo/buttons.html) file. 
+  To see more custom buttons styles, please check the [demo](skin-buttons/demo/index.html) file. 
 
 * `skin-styles-grid`
   * Three equal columns.
@@ -61,9 +55,9 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
   </div>
   ```
 
-  To see more basic grid layouts, please check the [demo](./demo/grid.html) file. 
+  To see more basic grid layouts, please check the [demo](bootstrap/demo/index.html) file. 
 
-* `skin-styles-typography`
+* `skin-typography`
   * `typography-light`
 
   ``` html
@@ -80,7 +74,7 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
   </article>
   ```
 
-  To see more typography default styles, please check the [demo](./demo/typography.html) file. 
+  To see more typography default styles, please check the [demo](skin-typography/demo/index.html) file. 
 
 ## Contributing
 
