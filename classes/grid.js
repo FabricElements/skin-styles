@@ -1,15 +1,7 @@
-<!--
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-`skin-styles-grid` is a supercharged Bootstrap grid.
-https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css
-
-@group Skin Styles
-@demo demo/grid.html grid
--->
-
-<style>
+$_documentContainer.innerHTML = `<style>
   [hidden] {
     display: none !important;
   }
@@ -192,8 +184,8 @@ https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css
     margin-left: 0;
   }
 
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
+  .no-gutters &gt; .col,
+  .no-gutters &gt; [class*="col-"] {
     padding-right: 0;
     padding-left: 0;
   }
@@ -1572,4 +1564,23 @@ https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css
       margin-left: 91.666667%;
     }
   }
-</style>
+</style>`;
+
+document.head.appendChild($_documentContainer.content);
+
+/**
+@license
+Copyright (c) 2017 FabricElements. All rights reserved.
+
+`skin-styles-grid` is a supercharged Bootstrap grid.
+https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap-grid.css
+
+@group Skin Styles
+@demo demo/grid.html grid
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+;

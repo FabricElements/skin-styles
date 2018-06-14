@@ -13,12 +13,13 @@ Copyright (c) 2017 FabricElements. All rights reserved.
 
   <title>skin-typography demo</title>
 
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../../polymer/lib/elements/custom-style.html">
-
-  <link rel="import" href="../../paper-button/paper-button.html">
-  <link rel="import" href="../classes/typography.html">
-  <link rel="import" href="../styles/default-theme.html">
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+  <script type="module">
+    import '@polymer/polymer/lib/elements/custom-style.js';
+  </script>
+  <script type="module" src="../classes/typography.js"></script>
+  <script type="module" src="../styles/default-theme.js"></script>
 
   <custom-style>
     <style include="skin-typography">
@@ -51,7 +52,7 @@ Copyright (c) 2017 FabricElements. All rights reserved.
 
         background: var(--default-primary-color);
         color: var(--text-primary-color);
-        @apply(--paper-font-display1);
+        @apply --paper-font-display1;
       }
 
       .item, .disabled-item {
@@ -65,19 +66,19 @@ Copyright (c) 2017 FabricElements. All rights reserved.
       .item .primary {
         color: var(--primary-text-color);
 
-        @apply(--paper-font-body2);
+        @apply --paper-font-body2;
       }
 
       .item .secondary {
         color: var(--secondary-text-color);
 
-        @apply(--paper-font-body1);
+        @apply --paper-font-body1;
       }
 
       .disabled-item {
         color: var(--disabled-text-color);
 
-        @apply(--paper-font-body2);
+        @apply --paper-font-body2;
       }
 
       .fab {
@@ -93,7 +94,7 @@ Copyright (c) 2017 FabricElements. All rights reserved.
 
         background: var(--accent-color);
         color: var(--text-primary-color);
-        @apply(--paper-font-display1);
+        @apply --paper-font-display1;
       }
 
       section {
@@ -104,8 +105,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
   </custom-style>
 </head>
 <body>
-<h1>skin-typography</h1>
-
 <section id="default-theme">
   <h2>default-theme.html</h2>
 
@@ -123,7 +122,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </div>
   </article>
 </section>
-
 
 <section id="typography-light">
   <h2>typography-light.html</h2>
@@ -185,9 +183,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </p>
   </article>
 </section>
-
-<br>
-<hr>
 
 <section id="typography-dark">
   <h2>typography-dark.html</h2>

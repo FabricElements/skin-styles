@@ -1,21 +1,16 @@
-<link rel="import" href="../../polymer/polymer.html">
+import '@polymer/polymer/polymer-legacy.js';
+import '@polymer/paper-styles/color.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-<!--
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
--->
-
-<link rel="import" href="../../paper-styles/color.html">
-
-<!-- Taken from https://www.google.com/design/spec/style/color.html#color-ui-color-application -->
-<custom-style>
+$_documentContainer.innerHTML = `<custom-style>
   <style is="custom-style">
     html {
       /*
        * You can use these generic variables in your elements for easy theming.
-       * For example, if all your elements use `--primary-text-color` as its main
+       * For example, if all your elements use \`--primary-text-color\` as its main
        * color, then switching from a light to a dark theme is just a matter of
-       * changing the value of `--primary-text-color` in your application.
+       * changing the value of \`--primary-text-color\` in your application.
        */
       --primary-text-color: var(--light-theme-text-color);
       --primary-background-color: var(--light-theme-background-color);
@@ -109,4 +104,18 @@ Copyright (c) 2017 FabricElements. All rights reserved.
       --dark-theme-font-code1: #ffffff;
     }
   </style>
-</custom-style>
+</custom-style>`;
+
+document.head.appendChild($_documentContainer.content);
+
+/**
+@license
+Copyright (c) 2017 FabricElements. All rights reserved.
+*/
+/* Taken from https://www.google.com/design/spec/style/color.html#color-ui-color-application */
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+;

@@ -1,18 +1,9 @@
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="../styles/buttons.html">
+import '@polymer/polymer/polymer-legacy.js';
+import '../styles/buttons.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-<!--
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
-
-`buttons`
-App color themes
-
-@group Skin Styles
-@demo demo/buttons.html skin-buttons
--->
-
-<dom-module id="skin-buttons">
+$_documentContainer.innerHTML = `<dom-module id="skin-buttons">
   <template>
     <style is="custom-style">
       /*noinspection ALL*/
@@ -32,151 +23,170 @@ App color themes
       =============================*/
       /*noinspection ALL*/
       .btn-rounded {
-        @apply(--btn-rounded);
+        @apply --btn-rounded;
       }
 
       /* primary-color ==============================================================*/
       /*noinspection ALL*/
       .btn--primary-color:not([disabled]) {
-        @apply(--btn--primary-color);
+        @apply --btn--primary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--primary-color:not([disabled]) {
-        @apply(--btn-fill--primary-color);
+        @apply --btn-fill--primary-color;
       }
 
       /*noinspection ALL*/
       .btn--light-primary-color:not([disabled]) {
-        @apply(--btn--light-primary-color);
+        @apply --btn--light-primary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--light-primary-color:not([disabled]) {
-        @apply(--btn-fill--light-primary-color);
+        @apply --btn-fill--light-primary-color;
       }
 
       /*noinspection ALL*/
       .btn--dark-primary-color:not([disabled]) {
-        @apply(--btn--dark-primary-color);
+        @apply --btn--dark-primary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--dark-primary-color:not([disabled]) {
-        @apply(--btn-fill--dark-primary-color);
+        @apply --btn-fill--dark-primary-color;
       }
 
       /*noinspection ALL*/
       .btn--accent-color:not([disabled]) {
-        @apply(--btn--accent-color);
+        @apply --btn--accent-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--accent-color:not([disabled]) {
-        @apply(--btn-fill--accent-color);
+        @apply --btn-fill--accent-color;
       }
 
       /*noinspection ALL*/
       .btn--light-accent-color:not([disabled]) {
-        @apply(--btn--light-accent-color);
+        @apply --btn--light-accent-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--light-accent-color:not([disabled]) {
-        @apply(--btn-fill--light-accent-color);
+        @apply --btn-fill--light-accent-color;
       }
 
       /*noinspection ALL*/
       .btn--dark-accent-color:not([disabled]) {
-        @apply(--btn--dark-accent-color);
+        @apply --btn--dark-accent-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--dark-accent-color:not([disabled]) {
-        @apply(--btn-fill--dark-accent-color);
+        @apply --btn-fill--dark-accent-color;
       }
 
       /* secondary-color ==============================================================*/
       /*noinspection ALL*/
       .btn--secondary-color:not([disabled]) {
-        @apply(--btn--secondary-color);
+        @apply --btn--secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--secondary-color:not([disabled]) {
-        @apply(--btn-fill--secondary-color);
+        @apply --btn-fill--secondary-color;
       }
 
       /*noinspection ALL*/
       .btn--light-secondary-color:not([disabled]) {
-        @apply(--btn--light-secondary-color);
+        @apply --btn--light-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--light-secondary-color:not([disabled]) {
-        @apply(--btn-fill--light-secondary-color);
+        @apply --btn-fill--light-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn--dark-secondary-color:not([disabled]) {
-        @apply(--btn--dark-secondary-color);
+        @apply --btn--dark-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--dark-secondary-color:not([disabled]) {
-        @apply(--btn-fill--dark-secondary-color);
+        @apply --btn-fill--dark-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn--accent-secondary-color:not([disabled]) {
-        @apply(--btn--accent-secondary-color);
+        @apply --btn--accent-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--accent-secondary-color:not([disabled]) {
-        @apply(--btn-fill--accent-secondary-color);
+        @apply --btn-fill--accent-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn--light-accent-secondary-color:not([disabled]) {
-        @apply(--btn--light-accent-secondary-color);
+        @apply --btn--light-accent-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--light-accent-secondary-color:not([disabled]) {
-        @apply(--btn-fill--light-accent-secondary-color);
+        @apply --btn-fill--light-accent-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn--dark-accent-secondary-color:not([disabled]) {
-        @apply(--btn--dark-accent-secondary-color);
+        @apply --btn--dark-accent-secondary-color;
       }
 
       /*noinspection ALL*/
       .btn-fill--dark-accent-secondary-color:not([disabled]) {
-        @apply(--btn-fill--dark-accent-secondary-color);
+        @apply --btn-fill--dark-accent-secondary-color;
       }
 
       /*=====================================*/
       /*noinspection ALL*/
       .btn-light:not([disabled]) {
-        @apply(--btn-light);
+        @apply --btn-light;
       }
 
       /*noinspection ALL*/
       .btn-light-white:not([disabled]) {
-        @apply(--btn-light-white);
+        @apply --btn-light-white;
       }
 
       /*noinspection ALL*/
       .btn--mid--dark:not([disabled]) {
-        @apply(--btn--mid--dark);
+        @apply --btn--mid--dark;
       }
 
       /*noinspection ALL*/
       .btn--dark:not([disabled]) {
-        @apply(--btn--dark);
+        @apply --btn--dark;
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
+
+/**
+@license
+Copyright (c) 2017 FabricElements. All rights reserved.
+
+`buttons`
+App color themes
+
+@group Skin Styles
+@demo demo/buttons.html skin-buttons
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+;
