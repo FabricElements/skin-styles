@@ -1,6 +1,9 @@
-<!--
+import './styles.js';
+import './classes.js';
+
+/**
 @license
-Copyright (c) 2017 FabricElements. All rights reserved.
+Copyright (c) FabricElements. All rights reserved.
 
 The `<skin-styles>` component provides simple ways to use Material Design CSS styles
 in your application. The following imports are available:
@@ -20,6 +23,4 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
 @pseudoElement skin-styles
 @demo demo/buttons.html skin-buttons
 @demo demo/typography.html skin-typography
--->
-<link rel="import" href="styles.html">
-<link rel="import" href="classes.html">
+*/

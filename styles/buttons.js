@@ -1,15 +1,18 @@
-<!--
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
--->
+/**
+ @license
+ Copyright (c) FabricElements. All rights reserved.
+ */
+import '@polymer/polymer/lib/elements/custom-style.js';
+import './default-theme';
 
-<link rel="import" href="../../polymer/polymer.html">
-<link rel="import" href="default-theme.html">
-
+const styleElement = document.createElement('template');
+styleElement.innerHTML = `
 <custom-style>
+  <!--suppress CssInvalidPseudoSelector -->
+  <!--suppress CssUnresolvedCustomProperty -->
+  <!--suppress CssUnresolvedCustomPropertySet -->
   <style is="custom-style">
     html {
-
       --btn-rounded: {
         border-radius: 200px;
         padding-left: 16px;
@@ -158,8 +161,10 @@ Copyright (c) 2017 FabricElements. All rights reserved.
         background-color: var(--paper-grey-900);
         color: white;
       };
-
     }
-
   </style>
 </custom-style>
+`;
+
+document.head.appendChild(styleElement.content);
+

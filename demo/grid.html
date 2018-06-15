@@ -2,7 +2,7 @@
 
 <!--
 @license
-Copyright (c) 2017 FabricElements. All rights reserved.
+Copyright (c) FabricElements. All rights reserved.
 -->
 
 <!--suppress ALL -->
@@ -13,13 +13,13 @@ Copyright (c) 2017 FabricElements. All rights reserved.
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
 
   <title>skin-styles-grid demo</title>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script type="module">
+    import '@polymer/polymer/lib/elements/custom-style.js';</script>
+  <script type="module" src="../classes/grid.js"></script>
 
-  <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-  <link rel="import" href="../../polymer/lib/elements/custom-style.html">
-
-  <link rel="import" href="../classes/grid.html">
   <custom-style>
-    <style>
+    <style include="skin-grid">
       body {
         margin: 0;
         padding: 0;
@@ -223,7 +223,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </div>
   </div>
 
-</div> <!-- /container -->
-
+</div>
 </body>
 </html>

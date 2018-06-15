@@ -1,11 +1,32 @@
 {
-  "name": "skin-styles",
-  "version": "2.0.0",
+  "description": "Extend paper-styles with useful styles",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "styles",
+    "FabricElements",
+    "css",
+    "buttons",
+    "typography",
+    "grid",
+    "animations"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:FabricElements/skin-styles.git"
+  },
+  "name": "@fabricelements/skin-styles",
+  "version": "3.0.0",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "eslint": "^4.5.0",
     "eslint-config-google": "^0.9.1",
-    "eslint-plugin-html": "^3.2.0"
+    "eslint-plugin-html": "^3.2.0",
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
+    "wct-browser-legacy": "^0.0.1-pre.11",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "@polymer/iron-test-helpers": "^3.0.0-pre.18",
+    "@polymer/paper-button": "^3.0.0-pre.18"
   },
   "scripts": {
     "lint": "npm run lint:javascript && polymer lint",
@@ -13,6 +34,17 @@
     "test:integration": "polymer build # test that psk builds without error with the CLI"
   },
   "dependencies": {
-    "gulp": "^3.9.1"
-  }
+    "gulp": "^3.9.1",
+    "@polymer/polymer": "^3.0.0",
+    "@polymer/paper-styles": "^3.0.0-pre.18"
+  },
+  "resolutions": {
+    "inherits": "2.0.3",
+    "samsam": "1.1.3",
+    "supports-color": "3.1.2",
+    "type-detect": "1.0.0",
+    "@webcomponents/webcomponentsjs": "2.0.0-beta.2"
+  },
+  "main": "skin-styles.js",
+  "author": "The FabricElements Authors"
 }
