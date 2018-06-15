@@ -3752,15 +3752,15 @@ $_documentContainer.innerHTML = `<style>
 document.head.appendChild($_documentContainer.content);
 
 /**
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
+ @license
+ Copyright (c) FabricElements. All rights reserved.
 
-`skin-styles-bootstrap` is a supercharged Bootstrap grid.
-https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap.css
+ `skin-styles-bootstrap` is a supercharged Bootstrap grid.
+ https://github.com/twbs/bootstrap/blob/v4-dev/dist/css/bootstrap.css
 
-@group Skin Styles
-@demo demo/grid.html bootstrap
-*/
+ @group Skin Styles
+ @demo demo/grid.html bootstrap
+ */
 /*
   FIXME(polymer-modulizer): the above comments were extracted
   from HTML and may be out of place here. Review them and

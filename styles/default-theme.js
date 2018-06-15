@@ -1,9 +1,16 @@
-import '@polymer/polymer/polymer-legacy.js';
+/**
+ @license
+ Copyright (c) FabricElements. All rights reserved.
+ */
+import '@polymer/polymer/lib/elements/custom-style.js';
 import '@polymer/paper-styles/color.js';
-const $_documentContainer = document.createElement('template');
-$_documentContainer.setAttribute('style', 'display: none;');
 
-$_documentContainer.innerHTML = `<custom-style>
+const styleElement = document.createElement('template');
+styleElement.innerHTML = `
+<custom-style>
+  <!--suppress CssInvalidPseudoSelector -->
+  <!--suppress CssUnresolvedCustomProperty -->
+  <!--suppress CssUnresolvedCustomPropertySet -->
   <style is="custom-style">
     html {
       /*
@@ -104,18 +111,7 @@ $_documentContainer.innerHTML = `<custom-style>
       --dark-theme-font-code1: #ffffff;
     }
   </style>
-</custom-style>`;
+</custom-style>
+`;
 
-document.head.appendChild($_documentContainer.content);
-
-/**
-@license
-Copyright (c) 2017 FabricElements. All rights reserved.
-*/
-/* Taken from https://www.google.com/design/spec/style/color.html#color-ui-color-application */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
-;
+document.head.appendChild(styleElement.content);

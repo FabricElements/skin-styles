@@ -1,10 +1,16 @@
-import '@polymer/polymer/polymer-legacy.js';
+/**
+ @license
+ Copyright (c) FabricElements. All rights reserved.
+ */
+import '@polymer/polymer/lib/elements/custom-style.js';
 import './default-theme';
 
-const $_documentContainer = document.createElement('template');
-$_documentContainer.setAttribute('style', 'display: none;');
-
-$_documentContainer.innerHTML =`<custom-style>
+const styleElement = document.createElement('template');
+styleElement.innerHTML = `
+<custom-style>
+  <!--suppress CssInvalidPseudoSelector -->
+  <!--suppress CssUnresolvedCustomProperty -->
+  <!--suppress CssUnresolvedCustomPropertySet -->
   <style is="custom-style">
     html {
       --btn-rounded: {
@@ -156,15 +162,9 @@ $_documentContainer.innerHTML =`<custom-style>
         color: white;
       };
     }
-
   </style>
-</custom-style>`;
+</custom-style>
+`;
 
-document.head.appendChild($_documentContainer.content);
-
-/**
-@license
- Copyright (c) 2017 FabricElements. All rights reserved.
-*/
-;
+document.head.appendChild(styleElement.content);
 

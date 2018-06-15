@@ -3,7 +3,7 @@ import './classes.js';
 
 /**
 @license
-Copyright (c) 2017 FabricElements. All rights reserved.
+Copyright (c) FabricElements. All rights reserved.
 
 The `<skin-styles>` component provides simple ways to use Material Design CSS styles
 in your application. The following imports are available:
@@ -24,9 +24,3 @@ available in each ones, rather than the aggregated `skin-styles.html` as a whole
 @demo demo/buttons.html skin-buttons
 @demo demo/typography.html skin-typography
 */
-/*
-  FIXME(polymer-modulizer): the above comments were extracted
-  from HTML and may be out of place here. Review them and
-  then delete this comment!
-*/
-;

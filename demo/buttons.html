@@ -2,7 +2,7 @@
 
 <!--
 @license
-Copyright (c) 2017 FabricElements. All rights reserved.
+Copyright (c) FabricElements. All rights reserved.
 -->
 
 <html>
@@ -14,15 +14,11 @@ Copyright (c) 2017 FabricElements. All rights reserved.
   <title>skin-buttons demo</title>
 
   <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-  <script type="module">
-    import '@polymer/polymer/lib/elements/custom-style.js';
-    import '@polymer/paper-styles/demo-pages.js';
-    import '@polymer/paper-button/paper-button.js';
-  </script>
   <script type="module" src="../classes/buttons.js"></script>
   <script type="module" src="../styles/default-theme.js"></script>
-
+  <script type="module">
+    import '@polymer/paper-button/paper-button.js';
+    import '@polymer/polymer/lib/elements/custom-style.js';</script>
   <custom-style>
     <style include="skin-buttons">
       body {
@@ -38,12 +34,12 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </style>
   </custom-style>
 </head>
+<body>
 <section id="buttons">
   <h2>buttons.html</h2>
   <p>Use paper-button attributes like "raised" to continue manipulating the styles</p>
   <br>
   <br>
-
   <article>
     <h3>btn-rounded</h3>
     <paper-button raised class="btn-rounded">
@@ -74,7 +70,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--primary-color</h3>
     <paper-button class="btn-fill--primary-color">
       hello
@@ -85,7 +80,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--light-primary-color</h3>
     <paper-button class="btn--light-primary-color">
       hello
@@ -95,7 +89,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--light-primary-color</h3>
     <paper-button class="btn-fill--light-primary-color">
       hello
@@ -106,7 +99,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--dark-primary-color</h3>
     <paper-button class="btn--dark-primary-color">
       hello
@@ -116,7 +108,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--dark-primary-color</h3>
     <paper-button class="btn-fill--dark-primary-color">
       hello
@@ -127,7 +118,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--accent-color</h3>
     <paper-button class="btn--accent-color">
       hello
@@ -137,7 +127,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--accent-color</h3>
     <paper-button class="btn-fill--accent-color">
       hello
@@ -148,7 +137,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--light-accent-color</h3>
     <paper-button class="btn--light-accent-color">
       hello
@@ -158,7 +146,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--light-accent-color</h3>
     <paper-button class="btn-fill--light-accent-color">
       hello
@@ -169,7 +156,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--dark-accent-color</h3>
     <paper-button class="btn--dark-accent-color">
       hello
@@ -179,7 +165,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--dark-accent-color</h3>
     <paper-button class="btn-fill--dark-accent-color">
       hello
@@ -190,7 +175,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
   </article>
   <br>
   <article>
@@ -203,7 +187,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--secondary-color</h3>
     <paper-button class="btn-fill--secondary-color">
       hello
@@ -214,7 +197,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--light-secondary-color</h3>
     <paper-button class="btn--light-secondary-color">
       hello
@@ -224,7 +206,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--light-secondary-color</h3>
     <paper-button class="btn-fill--light-secondary-color">
       hello
@@ -235,7 +216,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--dark-secondary-color</h3>
     <paper-button class="btn--dark-secondary-color">
       hello
@@ -245,7 +225,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--dark-secondary-color</h3>
     <paper-button class="btn-fill--dark-secondary-color">
       hello
@@ -256,7 +235,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--accent-secondary-color</h3>
     <paper-button class="btn--accent-secondary-color">
       hello
@@ -266,7 +244,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--accent-secondary-color</h3>
     <paper-button class="btn-fill--accent-secondary-color">
       hello
@@ -277,7 +254,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--light-accent-secondary-color</h3>
     <paper-button class="btn--light-accent-secondary-color">
       hello
@@ -287,7 +263,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--light-accent-secondary-color</h3>
     <paper-button class="btn-fill--light-accent-secondary-color">
       hello
@@ -298,7 +273,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     <br>
     <br>
     <hr>
-
     <h3>btn--dark-accent-secondary-color</h3>
     <paper-button class="btn--dark-accent-secondary-color">
       hello
@@ -308,7 +282,6 @@ Copyright (c) 2017 FabricElements. All rights reserved.
     </paper-button>
     <br>
     <br>
-
     <h3>btn-fill--dark-accent-secondary-color</h3>
     <paper-button class="btn-fill--dark-accent-secondary-color">
       hello
